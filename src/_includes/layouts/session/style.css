@@ -109,7 +109,7 @@
   padding: 0.3rem var(--side-margin);
   margin-bottom: 4rem;
   @media (min-width: 960px) {
-    box-shadow: 0 55px 99px rgba(0, 0, 0, 0.13);
+    box-shadow: var(--lg-hueless-shadow);
 
     grid-column: 2 / span 1;
     margin: 0;

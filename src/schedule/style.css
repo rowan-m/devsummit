@@ -366,7 +366,7 @@
     margin-right: 0;
     border-radius: 0.6rem;
     padding: 1.5rem 1.8rem;
-    box-shadow: 0 35px 49px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--lg-hueless-shadow);
     font-size: 0.9rem;
   }
 
