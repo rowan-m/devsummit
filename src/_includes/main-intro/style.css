@@ -81,49 +81,6 @@
   }
 }
 
-.register {
-  display: none;
-  font-size: inherit;
-  margin: 1.7em;
-  margin-left: 0;
-
-  @media (min-width: 720px) {
-    display: block;
-  }
-}
-
-.get-updates {
-  background: var(--white);
-  border-radius: 1000px;
-  padding: 0.9em 0;
-  display: block;
-  white-space: nowrap;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
-  text-decoration: none;
-  line-height: 1;
-  padding: 0.6em 1.3em;
-  display: grid;
-  grid-template-columns: max-content max-content;
-  grid-gap: 0.7em;
-  align-items: center;
-  margin: 1.7em auto;
-  width: max-content;
-
-  @media (min-width: 720px) {
-    margin: 1.7em;
-    margin-left: 0;
-  }
-
-  &::before {
-    content: '';
-    --size: 1.8em;
-    width: var(--size);
-    height: var(--size);
-    background: url('confboxAsset(/assets/notify-icon.svg)') no-repeat;
-    background-size: contain;
-  }
-}
-
 .squiggles-outer {
   height: 100%;
 }
