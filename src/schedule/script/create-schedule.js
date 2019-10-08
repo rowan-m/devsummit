@@ -58,7 +58,9 @@ module.exports = function createScheduleHtml(
                   <div class="${classNameMap.timeLineContent}">
                     ${item.icon
                       ? html`
-                          <div class="${classNameMap.iconBubble}">
+                          <div
+                            class="${classNameMap.iconBubble} ${classNameMap.iconBorder}"
+                          >
                             <img
                               class="${classNameMap.icon}"
                               src="${item.icon}"

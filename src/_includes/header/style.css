@@ -12,6 +12,7 @@
     grid-template-columns: [title] max-content 2.6em [reg] 1fr [extra-links] max-content;
     place-items: center start;
     font-size: 0.8rem;
+    z-index: 2;
   }
 
   @media (min-width: 960px) {

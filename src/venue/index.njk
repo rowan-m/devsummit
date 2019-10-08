@@ -1,0 +1,129 @@
+---
+title: Venue
+description: Yerba Buena Center for the Arts
+---
+
+{% extends 'layouts/main/index.njk' %}
+
+{% block content %}
+  {%- set moduleCSS = "/_includes/module.css" -%}
+  {% css page, moduleCSS %}
+  {%- set pageCSS = "/_includes/page.css" -%}
+  {% css page, pageCSS %}
+  {%- set css = "/venue/style.css" -%}
+  {% css page, css %}
+
+  <div class="{% className pageCSS, 'header' %} {% className css, 'header' %}">
+    <div class="{% className css, 'header-map' %}"></div>
+    <div class="{% className css, 'header-content' %}">
+      <h1 class="{% className moduleCSS, 'heading' %} {% className pageCSS, 'heading' %}">{% headingSlug "Venue" %}</h1>
+      <div class="{% className pageCSS, 'heading-extra' %}">
+        <a class="{% className css, 'icon-link' %} {% className css, 'map-link' %}" href="https://goo.gl/maps/TBiTuFitnqe1wxPW7" rel="noopener noreferrer" target="_blank">
+          Map ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {% set utilsCSS = "/_includes/utils.css" %}
+  {% css page, utilsCSS %}
+
+  <section class="{% className moduleCSS, 'root' %} {% className css, 'address-root' %}">
+    <h1 class="{% className css, 'venue-h' %}"><a href="https://ybca.org/" rel="noopener noreferrer" target="_blank">Yerba Buena Center for the Arts</a></h1>
+
+    <div class="{% className css, 'cols' %}">
+      <div class="{% className css, 'col-content' %}">
+        <p>Opened to the public in 1993, YBCA was founded as the cultural anchor of San Francisco’s Yerba Buena Gardens neighborhood.</p>
+
+        <h2 class="{% className css, 'address-h' %}">Address</h2>
+        <address class="{% className css, 'address' %}">
+          700 Howard St<br>
+          San Francisco, CA 94103
+        </address>
+
+        <h2 class="{% className css, 'directions-h' %}">Directions</h2>
+
+        <ul class="{% className css, 'unlist' %} {% className css, 'direction-list' %}">
+          <li><a class="{% className css, 'icon-link' %} {% className css, 'train-link' %}" href="https://www.google.com/maps/dir//Yerba+Buena+Center+for+the+Arts,+701+Mission+St,+San+Francisco,+CA+94103/@37.7857064,-122.4372097,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x80858087ec8d9c89:0x477290961c219b7c!2m2!1d-122.4021904!2d37.7856437!3e0" rel="noopener noreferrer" target="_blank">Subway / metro directions ↗</a></li>
+          <li><a class="{% className css, 'icon-link' %} {% className css, 'car-link' %}" href="https://www.google.com/maps/dir//Yerba+Buena+Center+for+the+Arts,+701+Mission+St,+San+Francisco,+CA+94103/@37.7857064,-122.4372097,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x80858087ec8d9c89:0x477290961c219b7c!2m2!1d-122.4021904!2d37.7856437!3e3" rel="noopener noreferrer" target="_blank">Taxi / car directions ↗</a></li>
+          <li><a class="{% className css, 'icon-link' %} {% className css, 'plane-link' %}" href="https://www.google.com/maps/dir/San+Francisco+International+Airport,+San+Francisco,+CA+94128,+United+States/Yerba+Buena+Center+for+the+Arts,+701+Mission+St,+San+Francisco,+CA+94103/@37.7171963,-122.4894727,12z/data=!4m14!4m13!1m5!1m1!1s0x808f778c55555555:0xa4f25c571acded3f!2m2!1d-122.3789554!2d37.6213129!1m5!1m1!1s0x80858087ec8d9c89:0x477290961c219b7c!2m2!1d-122.4021904!2d37.7856437!3e3" rel="noopener noreferrer" target="_blank">From the airport directions ↗</a></li>
+        </ul>
+      </div>
+      <div class="{% className css, 'street-map' %}">
+        <div class="{% className utilsCSS, 'aspect-ratio' %}" style="--aspect-ratio: 1.4345">
+          <img src="confboxAsset(/venue/assets/street-map.png)" alt="Street map" class="{% className utilsCSS, 'media-fill' %}">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% from 'squiggle-banner/index.njk' import squiggleBanner %}
+  {{ squiggleBanner(page, '--blue') }}
+
+  <section class="{% className moduleCSS, 'root' %} {% className css, 'wayfinding' %}">
+    <h1 class="{% className moduleCSS, 'heading' %}">Wayfinding</h1>
+    <div class="{% className css, 'cols' %}">
+      <ol class="{% className css, 'unlist' %} {% className css, 'floor-list' %}">
+        <li style="--bg: var(--red)"><span>Registration</span></li>
+        <li style="--bg: var(--red)"><span>Swag</span></li>
+        <li style="--bg: var(--orange)"><span>General Session</span></li>
+        <li style="--bg: var(--green)"><span>Meals</span></li>
+        <li style="--bg: var(--blue)">
+          <ul class="{% className css, 'unlist' %} {% className css, 'activity-list' %}">
+            <li>Forum</li>
+            <li>Demos</li>
+            <li>Office hours</li>
+            <li>Review Clinics</li>
+            <li>F/B</li>
+            <li>Social Hour</li>
+          </ul>
+        </li>
+        <li style="--bg: var(--orange)">
+          <ul class="{% className css, 'unlist' %} {% className css, 'activity-list' %}">
+            <li>Grand Lobby</li>
+            <li>Introvert Lounge</li>
+            <li>Reception</li>
+          </ul>
+        </li>
+        <li style="--bg: var(--blue)"><span>General Session Overflow</span></li>
+        <li style="--bg: var(--green)"><span>Certification Lounge</span></li>
+        <li style="--bg: var(--red)"><span>#AskChrome</span></li>
+        <li style="--bg: var(--orange)"><span>Multifaith and Contemplation Room</span></li>
+        <li class="{% className css, 'clear-counter' %}"><span>Restrooms</span></li>
+        <li style="--bg: var(--orange)"><span>Mothers Room</span></li>
+      </ol>
+      <div class="{% className css, 'floor-plans' %}">
+        <div class="{% className utilsCSS, 'aspect-ratio' %}" style="--aspect-ratio: .4712">
+          <img src="confboxAsset(/venue/assets/floor-art.png)" alt="Art center floor plan" class="{% className utilsCSS, 'media-fill' %}">
+        </div>
+        <div class="{% className utilsCSS, 'aspect-ratio' %}" style="--aspect-ratio: .3816">
+          <img src="confboxAsset(/venue/assets/floor-theatre.png)" alt="Theatre floor plan" class="{% className utilsCSS, 'media-fill' %}">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {%- set contentCSS = "/_includes/content.css" -%}
+  {% css page, contentCSS %}
+  <div class="{% className moduleCSS, 'root' %} {% className moduleCSS, 'root-alt' %} {% className css, 'additional-info' %}">
+    <section class="{% className contentCSS, 'category' %}">
+      <h1 class="{% className contentCSS, 'category-heading' %}">What to expect</h1>
+      <div class="{% className contentCSS, 'aside-content' %}">
+        <p>Over the two days, Chrome product engineering teams and the Chrome community gather  to envision and build the future of the Web. Both in-person and livestream attendees will hear about platform updates, quick and free wins, architectural guidance, developer tooling, case-studies, and opportunities for increased reach and engagement with Chrome and Google at large.</p>
+      </div>
+      <div class="{% className contentCSS, 'box' %} {% className contentCSS, 'section' %}">
+        <h2 class="{% className contentCSS, 'section-heading' %}">Engaging Sessions in the YBCA Theatre</h2>
+        <p>Learn directly from the Chrome product engineering teams about the latest innovations and updates through deep technical sessions, demos, and fun interactive experiences. Day 1 sessions will focus on innovations for the modern Web. Day 2 sessions show Chrome’s vision and investment in the future of the Web.</p>
+        <hr class="{% className contentCSS, 'divider' %}">
+        <h2 class="{% className contentCSS, 'section-heading' %}">Hands-on Learning in the Forum</h2>
+        <p>Actively explore the latest Chrome tools and technologies via interactive demos, hands-on learning, and one-on-one office hours with Chrome experts. Chrome staff will also be on hand to lend guidance and tips on your specific projects.</p>
+        <hr class="{% className contentCSS, 'divider' %}">
+        <h2 class="{% className contentCSS, 'section-heading' %}">Community Partners</h2>
+        <p>As always, we’ll also have representatives from our browser friends joining us to talk about their vision for their respective products and discuss how we’re working together to move the Web forward and make it easier for developers to build on.</p>
+      </div>
+    </section>
+  </div>
+
+  {% include 'faq/index.njk' %}
+  {{ squiggleBanner(page, '--red', grayTop=true) }}
+{% endblock %}

@@ -39,16 +39,16 @@ description: Everything you need to know about Chrome Dev Summit.
   {%- set faqCSS = "/faqs/styles.css" -%}
   {% css page, faqCSS %}
   {% for section in collections.faqs %}
-    <section class="{% className faqCSS, 'category' %}">
-      <h1 id="{% idify section.title %}" class="{% className faqCSS, 'category-heading' %}">{{ section.title }}</h1>
-      <aside class="{% className faqCSS, 'category-meta' %}">
+    <section class="{% className contentCSS, 'category' %}">
+      <h1 id="{% idify section.title %}" class="{% className contentCSS, 'category-heading' %}">{{ section.title }}</h1>
+      <aside class="{% className contentCSS, 'category-meta' %}">
         <blockquote>{{ section.question }}</blockquote>
         <p>{{ section.answer | safe }}<p>
       </aside>
-      <div class="{% className contentCSS, 'box' %} {% className faqCSS, 'section' %}">
+      <div class="{% className contentCSS, 'box' %} {% className contentCSS, 'section' %}">
         {% for faq in section.items %}
-          {% if (loop.index !== 1) %}<hr class="{% className faqCSS, 'divider' %}">{% endif %}
-          {% if (faq.data.title) and (faq.data.title != section.title) %}<h2 id="{% idify faq.data.title %}" class="{% className faqCSS, 'section-heading' %}">{{ faq.data.title }}</h2>{% endif %}
+          {% if (loop.index !== 1) %}<hr class="{% className contentCSS, 'divider' %}">{% endif %}
+          {% if (faq.data.title) and (faq.data.title != section.title) %}<h2 id="{% idify faq.data.title %}" class="{% className contentCSS, 'section-heading' %}">{{ faq.data.title }}</h2>{% endif %}
           <div class="{% className faqCSS, 'markdown' %}">
             {{ faq.templateContent | safe }}
           </div>
