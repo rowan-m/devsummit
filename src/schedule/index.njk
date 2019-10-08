@@ -89,6 +89,7 @@ description: Everything that's happening at Chrome Dev Summit.
     </div>
   </section>
 
+  {% include 'subscribe-promo/index.njk' %}
   {% from 'squiggle-banner/index.njk' import squiggleBanner %}
-  {{ squiggleBanner(page, '--red', grayTop=true) }}
+  {{ squiggleBanner(page, '--red') }}
 {% endblock %}
