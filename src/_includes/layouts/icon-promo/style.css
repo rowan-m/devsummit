@@ -6,3 +6,12 @@
   border-radius: var(--radius);
   margin: calc(var(--radius) * -1) 0;
 }
+
+.icon {
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+
+  & > :first-child {
+  }
+}
