@@ -1,30 +1,19 @@
-.category {
-  @media (min-width: 1020px) {
-    display: grid;
-    grid-template-columns: 40% 1fr;
-    grid-column-gap: 4rem;
-    margin-bottom: 6rem;
+.markdown {
+  & p,
+  & li {
+    font-size: 0.9em;
   }
-}
 
-.category-meta {
-}
+  & ul > li {
+    margin-bottom: 1rem;
+  }
 
-.category-heading {
-  color: var(--darkgrey);
-  grid-column: 1 / span 2;
-}
-
-.section-heading {
-  font-weight: bold;
-  font-size: 1.14rem;
+  & h3 {
+    font-size: 0.8em;
+  }
 }
 
 :root {
   --squiggle-display: block;
   --squiggle-url: url('confboxAsset(/assets/squiggles/2.svg)');
-}
-
-.section h3 {
-  font-size: 0.8em;
 }

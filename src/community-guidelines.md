@@ -4,7 +4,7 @@ title: Community guidelines
 description: Treat everyone with respect. Participate while acknowledging that everyone deserves to be here — and each of us has the right to enjoy our experience without fear of harassment, discrimination, or condescension, whether blatant or via micro-aggressions.
 ---
 
-# Google Event Community Guidelines & Anti-Harrassment Policy
+# Google Event Community Guidelines & Anti-Harassment Policy
 
 Google is dedicated to providing a harassment-free and inclusive event experience for everyone regardless of gender identity and expression, sexual orientation, disabilities, neurodiversity, physical appearance, body size, ethnicity, nationality, race, age, religion, or other protected category. In an effort to make the event as inclusive as possible, gender-neutral bathrooms will be offered throughout the venue.
 

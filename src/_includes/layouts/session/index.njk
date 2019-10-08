@@ -34,7 +34,7 @@ layout: '/layouts/session/wrapper'
       <ul class="{% className sessionCSS, 'speakerlist' %}">
         {% for speaker in speakers -%}
           <li class="{% className sessionCSS, 'speaker' %}">
-            <img src="confboxAsset({% speakerAttr collections, speaker, "avatar", "/assets/speakers/default.svg" %})" class="{% className sessionCSS, 'speaker-avatar' %}">
+            <img src="confboxAsset({% speakerAttr collections, speaker, "avatar", "/assets/speakers/default.svg" %})" class="{% className sessionCSS, 'speaker-avatar' %}" alt="">
             <div class="{% className sessionCSS, 'speaker-creds' %}">
               <div class="{% className sessionCSS, 'speaker-name' %}">{% speakerAttr collections,
                 speaker,
