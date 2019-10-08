@@ -146,6 +146,16 @@
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
+
+  &[twitter]:hover {
+    background: var(--twitter);
+  }
+  &[youtube]:hover {
+    background: var(--youtube);
+  }
+  &[email]:hover {
+    background: var(--grey);
+  }
 }
 
 .footer-nav {
