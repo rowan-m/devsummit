@@ -1,16 +1,17 @@
 .root {
   --icon-size: 1.6em;
   padding-bottom: 0;
-  padding-top: 1.8rem;
+  padding-top: 4rem;
 
   @media (min-width: 720px) {
     display: grid;
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: 1fr auto auto auto;
     grid-template-columns: 1fr auto auto;
     grid-template-areas:
-      'logo    logo     logo'
+      'logo . .'
+      '. . nav'
       'divider divider  divider'
-      'social  language legal';
+      'social language legal';
   }
 
   ul {
@@ -136,4 +137,18 @@
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
+}
+
+.footer-nav {
+  grid-area: nav;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+
+  @media (min-width: 720px) {
+    align-items: flex-end;
+    padding-bottom: 8rem;
+  }
 }
