@@ -1,5 +1,5 @@
 ---
 name: Dion Almaer
-title: Google
+title: Web Ecosystem, Google
 avatar: /assets/speakers/dion-almaer.jpg
 ---

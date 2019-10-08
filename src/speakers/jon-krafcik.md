@@ -1,5 +1,5 @@
 ---
 name: Jon Krafcik
-title: Google
+title: Web Platform, Chrome, Google
 avatar: /assets/speakers/jon-krafcik.jpg
 ---

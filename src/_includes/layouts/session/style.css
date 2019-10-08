@@ -39,7 +39,7 @@
 }
 .tag {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.13);
-  color: var(--blue);
+  color: var(--darkgrey);
 }
 
 .tag > a {
@@ -78,6 +78,7 @@
   grid-template-columns: 1fr;
   grid-row-gap: 1rem;
   grid-auto-flow: dense;
+  align-items: start;
 
   @media (min-width: 960px) {
     grid-template-columns: 400px 1fr;
@@ -146,7 +147,7 @@
 
 .speaker-name {
   font-weight: bold;
-  color: var(--blue);
+  color: var(--darkgrey);
   font-size: 0.85rem;
 }
 .speaker-title {
