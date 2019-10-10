@@ -1,0 +1,25 @@
+:root {
+  --squiggle-display: block;
+  --squiggle-url: url('confboxAsset(/assets/squiggles/1.svg)');
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    --size: 1.7em;
+    width: var(--size);
+    height: var(--size);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url('confboxAsset(/assets/youtube-icon.svg)');
+    margin-right: 0.5rem;
+  }
+}
+
+.module {
+  padding-bottom: 1px;
+}

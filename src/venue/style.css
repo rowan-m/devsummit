@@ -40,7 +40,6 @@
 }
 
 .icon-link {
-  --icon-size: 1rem;
   display: inline-flex;
   align-items: center;
 

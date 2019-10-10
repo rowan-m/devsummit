@@ -23,6 +23,7 @@
   @media (min-width: 480px) {
     text-transform: lowercase;
     text-align: left;
+    white-space: nowrap;
 
     &::before {
       content: 'chrome://';
@@ -35,7 +36,7 @@
   &:before {
     content: ' ';
   }
-  @media (min-width: 720px) {
+  @media (min-width: 480px) {
     &:before {
       content: '-';
     }

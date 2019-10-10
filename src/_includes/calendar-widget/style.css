@@ -75,7 +75,7 @@
   content: '';
   display: inline-block;
   margin-right: 0.2em;
-  background: url('confboxAsset(assets/clock.svg)');
+  background: url('confboxAsset(/assets/clock-icon.svg)');
   background-size: contain;
   width: var(--icon-size);
   height: var(--icon-size);
