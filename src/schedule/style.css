@@ -32,8 +32,12 @@
 
 .day {
   display: grid;
-  grid-template-columns: [first] max-content 0.4rem [last] 1fr;
+  grid-template-columns: 1fr;
   --row-min-height: 3.5rem;
+
+  @media (min-width: 320px) {
+    grid-template-columns: [first] max-content 0.4rem [last] 1fr;
+  }
 
   @media (min-width: 720px) {
     --row-min-height: 2.7rem;
@@ -45,13 +49,16 @@
   text-align: center;
   font-weight: 400;
   line-height: 1;
-  grid-column: first;
   align-self: end;
   background: var(--blue);
   color: var(--white);
   margin: 0;
   padding: 0.6rem 1rem 0.35rem;
   border-radius: 0.3rem;
+
+  @media (min-width: 320px) {
+    grid-column: first;
+  }
 }
 
 .date-name {
@@ -66,11 +73,19 @@
 }
 
 .day-title {
-  grid-column: last;
   align-self: end;
   color: var(--blue);
   font: 700 1.3rem/1 google sans, roboto, sans-serif;
   padding-bottom: 0.35rem;
+
+  @media (max-width: 320px) {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  @media (min-width: 320px) {
+    grid-column: last;
+  }
 }
 
 .day-number {
@@ -87,6 +102,11 @@
   align-items: center;
   vertical-align: middle;
   line-height: var(--size);
+
+  @media (max-width: 320px) {
+    --size: 1.5rem;
+    font-size: 0.8rem;
+  }
 }
 
 .divider {
@@ -95,8 +115,11 @@
 
 .time-line,
 .row-gap {
-  grid-column: first;
   position: relative;
+
+  @media (min-width: 320px) {
+    grid-column: first;
+  }
 
   &::before {
     position: absolute;
@@ -160,6 +183,10 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  @media (max-width: 320px) {
+    --size: 4rem;
+  }
 }
 
 .icon-border {
@@ -175,7 +202,9 @@
 }
 
 .item {
-  grid-column: last;
+  @media (min-width: 320px) {
+    grid-column: last;
+  }
 }
 
 .basic-item-title {
@@ -186,6 +215,12 @@
   font-weight: normal;
   line-height: 1.3;
 
+  @media (max-width: 320px) {
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+  }
+
   @media (min-width: 720px) {
     font-size: 0.7rem;
     margin-top: 0.8rem;
@@ -193,7 +228,11 @@
 }
 
 .basic-item-title-dot-align {
-  margin-top: 1.42rem;
+  margin-top: 0;
+
+  @media (min-width: 320px) {
+    margin-top: 1.42rem;
+  }
 
   @media (min-width: 720px) {
     margin-top: 0.8rem;
@@ -209,9 +248,12 @@
 }
 
 .end {
-  grid-column: first;
   position: relative;
   height: var(--row-min-height);
+
+  @media (min-width: 320px) {
+    grid-column: first;
+  }
 
   &::after {
     content: '';
@@ -256,6 +298,10 @@
     font-size: 0.7rem;
   }
 
+  @media (max-width: 320px) {
+    margin-top: 0.5rem;
+  }
+
   /* min column size * 2 + gap + left/right padding 4.6rem * 2 */
   /*--autofit-goes-single-column: calc(800px + 6rem + 9.2rem);*/
   @media (min-width: 1119.2px) {
@@ -281,6 +327,15 @@
 
     @media (min-width: 720px) {
       top: 1.4em;
+    }
+
+    @media (max-width: 320px) {
+      right: calc(50% - var(--size) / 2);
+      top: -0.7rem;
+
+      border-left: calc(var(--size) * var(--sides)) solid transparent;
+      border-right: calc(var(--size) * var(--sides)) solid transparent;
+      border-bottom: var(--size) solid var(--white);
     }
   }
 
