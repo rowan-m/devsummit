@@ -49,6 +49,7 @@ layout: '/layouts/session/wrapper'
     </section>
   </div>
 
+  {% include 'notify-promo/index.njk' %}
   {% from 'squiggle-banner/index.njk' import squiggleBanner %}
-  {{ squiggleBanner(page, '--red', grayTop=true) }}
+  {{ squiggleBanner(page, '--red') }}
 {% endblock %}
