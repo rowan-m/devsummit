@@ -1,0 +1,69 @@
+.root {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  --radius: 14px;
+  border-radius: var(--radius);
+  margin: calc(var(--radius) * -1) 0;
+
+  @media (min-width: 520px) {
+    --vertical-padding: 5rem;
+  }
+}
+
+.icon {
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 520px) {
+    height: 2.5rem;
+  }
+
+  & > :first-child {
+    height: 100%;
+  }
+}
+
+.title {
+  font-family: google sans, roboto, sans-serif;
+  color: var(--offblack);
+  margin: 1.4em 0 1em;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.blurb {
+  max-width: 25rem;
+  margin: 1em auto 2em;
+
+  @media (min-width: 720px) {
+    font-size: 0.85rem;
+    margin-bottom: 2em;
+  }
+}
+
+.button {
+  color: var(--white);
+  background: var(--red);
+  text-decoration: none;
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0.4em 2.2em;
+  border-radius: 1000px;
+
+  @media (min-width: 520px) {
+    font-size: 0.9rem;
+    padding: 0.7em 2.4em;
+  }
+
+  &:hover {
+    color: var(--white);
+    text-decoration: underline;
+  }
+}
+
+.button-blue {
+  background: var(--blue);
+}

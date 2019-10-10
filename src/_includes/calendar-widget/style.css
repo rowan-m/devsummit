@@ -22,7 +22,7 @@
 }
 
 .icon {
-  font-family: 'Google Sans', roboto, sans-serif;
+  font-family: google sans, roboto, sans-serif;
   background: var(--blue);
   border-radius: 0.9rem;
   width: 5.8rem;
